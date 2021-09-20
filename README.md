@@ -8,14 +8,13 @@ This is helpful for both `storing` and `retreiving` information quickly.
 
 *GID* is made up of three components that build upon each other:
 1) `Semantic Symbols`, which can be used as shorthand for their rough meaning.
-2) `Semantic Compression` of notes by extracting their `goal/aim/kind` and adding it to the line start.
-3) `Level of Detail hierarchy`, which can be used to break up larger ideas into smaller parts that get more specific/add detail to the respective parent level.
+2) `Semantic Compression` of notes by extracting their `goal/aim/kind` to a matching `symbol`.
+3) `Level of Detail Hierarchy`, which can be used to break up larger ideas into smaller parts that get more specific/add detail to the respective parent level.
 
 ### Symbols
 
 The associated meaning of each symbol is decidedly `vague`, balancing `specificity` with `flexibility`.
-There also exists some overlap between some symbols that can often be resolved depending on the context and which symbol "feels right" in it.
-(See the end of this file for a usage example)
+There also exists some overlap between some symbols, though their utilization might vary depending on the context.
 
 ```
 `>`     Note
@@ -90,7 +89,7 @@ There also exists some overlap between some symbols that can often be resolved d
 
 ### Compression
 
-By extracting the `goal/aim/type` of an idea into a symbol, you can remove all words needed to express it otherwise.
+By extracting some part of an idea into a `symbol`, you can `remove` all words that would otherwise be needed to specify that part.
 
 Take for example the note
 ```
@@ -146,7 +145,7 @@ You mileage with some of these points may vary, but they all result from improve
 Similar to [stenography (shorthand)](https://en.wikipedia.org/wiki/Shorthand), reducing the amount of characters that need to be written significantly improves your speed.
 This might come in handy when the subject of your notes is `moving quickly`.
 (Think meetings, lectures, calls, interviews, fleeting ideas ...)
-When your writing can keep up with the content, you tend to `miss less` of it.
+When your notes can keep up with the content, you tend to `miss less` of it.
 
 Using *GID* might not speed you up much in the start; in fact it might even make you slower.
 Since I just made up the symbols as I went and never had to learn them, the speed increase is one of the largest benefits for me personally.
