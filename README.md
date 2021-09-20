@@ -1,44 +1,26 @@
 # GID
 
-GID defines a collection of ascii symbols that have some general meaning.
+*GID* defines a collection of `semantic symbols` that can be easily typed on most keyboards.
+These symbols can be used to `extract the goal/aim/kind` of an idea and thereby `reduce linguisitc overhead` needed for its expression.
+This is helpful for both `storing` and `retreiving` information quickly.
 
-For example `?` for a question, `:=` for a definition, `:` for an explenation, `>` as a general point and `<` as a counter point.<br>
-(A list of all symbols along with their rough meaning can be found further down.)
+## Components
 
-These symbols can be used to change the structure of your notes.
-Preceeding a bullet point (or larger text) with a semantic symbol has two benefits:
-(1) Its word count can often be reduced, and (2) the beggining of the line gives a hint at its content.
-This leads to both improved note taking speed and improved parsability of the resulting note tree.
+*GID* is made up of three components that build upon each other:
+1) `Semantic Symbols`, which can be used as shorthand for their rough meaning.
+2) `Semantic Compression` of notes by extracting their `goal/aim/kind` and adding it to the line start.
+3) `Level of Detail hierarchy`, which can be used to break up larger ideas into smaller parts that get more specific/add detail to the respective parent level.
 
-By nesting points via indentation, you can break up longer sentences into multiple levels of shorter ones.
-This again exposes more line beginnings to be filled with symbols describing the smaller pieces.
-Additionaly a level of detail hierarchy can be gained.
+### Symbols
 
-The extend to which you break up the tree is up to you.
-
-## Goals
-
-### Take notes quickly
-Reducing word count can help you stay on track when the subject of your notes is moving fast.
-This might happen in meetings, lectures, calls or for fleeting ideas that cant wait to slip your mind.
-
-### Jump back and forth
-If you want to take notes on multiple subjects at once, it is helpful to be able to quickly locate each thread to extend it.
-This might happen if a previous point (e.g. in lecture/stream of conciousness/...) is brought up again at a later time.
-
-### Store and Restart
-For ideas that require more continued thought and work than can be achieved in one session, it is useful to try and capture ones mental state at the point of interruption.
-This might happen at work when you leave for the weekend (holiday/tomorrow), during a larger project, or simply before going to bed.
-
-## Symbols
-Here are the symbols I use most often.
-The meaning behind them is decidedly vague, so that they can be flexible but still useful.
-There also exists some overlap between some symbols.
+The associated meaning of each symbol is decidedly `vague`, balancing `specificity` with `flexibility`.
+There also exists some overlap between some symbols that can often be resolved depending on the context and which symbol "feels right" in it.
+(See the end of this file for a usage example)
 
 ```
 `>`     Note
 `.`     Side-Note
-`(`     Relativation, side-note  `)`
+`(..)`  Relativation, side-note
 
 `<`     Counter-Point, Alternative
 `^`     Claim
@@ -94,61 +76,103 @@ There also exists some overlap between some symbols.
 `**`    Comment
 `_`     Continued on next line
 `|`     Chain symbols
+`{..}`  Inline side branch / Comment
+
+`[ ]`   TODO
+`[x]`   TODO - Done
+`[*]`   TODO - Active
+`[?]`   TODO - Unsure
+`[!]`   TODO - Priority
+`[p]`   TODO - Postponed
+`[~]`   TODO - Partly Finished / On Hold
 ```
 
 
-# GID example version of this file
+### Compression
+
+By extracting the `goal/aim/type` of an idea into a symbol, you can remove all words needed to express it otherwise.
+
+Take for example the note
 ```
-> GID
-  := collection of semantic ascii symbols
-    § '?' Question
-    § ':=' Definition
-    § '>' General Point
-    § '<' Counter Point
-    ** full list further down
-
-  ! GID was mainly developed in the context of node trees
-    (|: notes nested via indentation )
-    . can also just be used in normal text, sticky notes, ...
-
-  1) extract rough ~meaning of thought by selecting a matching symbol
-  2) place symbol at beggining of sentence (or text)
-  3) write note concisely
-
-  + reduce word count
-  + line start hints at content
-
-  ->|+ Faster Note Taking
-  ->|+ Faster Note Parsing
-
-  -- using nested note trees
-    ->|+ break up into levels of detail
-    ->|+ more reduction via symbols
-    
-    ( can use this a lot or a little, depending on taste )
-    
-  0 Take notes quickly
-    S subject of your notes is moving fast
-        §|<- Dont loose track in fast meetings/lectures/calls/...
-        §|<- Capture fleeting ideas
-    = Reduce Word Count
-      => Less time wasted writing
-
-  0 Jump back and forth
-    S multiple parallel threads
-        §|<- Return to previous points in meetings/...
-        §|<- stream of conciousness
-
-    = Improve Parsability
-      => Quickly find previous points
-    
-  0 Store and Restart
-    S Size of idea too large for one session
-        §|<- Leaving work for weekend/tomorrow/...
-        §|<- Going to bed
-
-    = Reduce Word Count and Use Branching Notes
-      => Capture multiple open tasks and ideas quickly
-    = Improve Parsability
-      => Connect with previous state 
+Peters claims that trees can walk when no one is looking (not sure if that is true).
 ```
+which could be compressed to
+```
+^ Trees can walk when no one is looking {//|@ Peters} {? true}
+```
+
+### Level of Detail
+
+Nesting notes into a `tree structure` is the core idea behind [outliners](https://en.wikipedia.org/wiki/Outliner).
+Similar to the outline found in a book, writing in a tree allows you to `group` multiple aspect of an idea under a more general common point.
+Like with a books `chapter, section, subsection, ...` hierarchy, this structure will allow you to easily `scan` the content of your notes on a high level, before `going deeper` into the `details` of the topic you are currently interested in.
+
+If your text editor supports it, you can also collapse sub-trees, allowing you to hide away information that is not relevant at the moment.
+
+This `parsability` is further improved by integrating the `semantic compression` via `symbols`, since the very first character of each point gives a hint to its content.
+
+To get back to the previous example, one could write (among many options):
+
+```
+^ Trees can walk when no one is looking
+  //|@ Peters
+
+  [!] check other sources to confirm
+```
+
+or
+
+```
+^ Trees can walk _
+  x no one is looking
+  //|@ Peters
+
+  ? is this true
+    [!] check other sources
+```
+
+Of course, the degree to which you split larger ideas into nested branches is up to you.
+Keep in mind that a very `high degree` of `nesting` and `compression` can make it `harder to reconnect` with your intended meaning at a later time, since the ambiguity of the `symbols` might not have enough `explicit context` to be resolved easily. 
+Your `implicit context` during writing might not be present later!
+
+
+## Benefits
+
+I originally developed *GID* in the context of a part time job, university lectures and unstructured thinking sessions in the evening. So the following benefits result from my original requirements and experience with *GID* over the years.
+You mileage with some of these points may vary, but they all result from improved `storage` and `retreival` processes.
+
+### Writing Speed
+
+Similar to [stenography (shorthand)](https://en.wikipedia.org/wiki/Shorthand), reducing the amount of characters that need to be written significantly improves your speed.
+This might come in handy when the subject of your notes is `moving quickly`.
+(Think meetings, lectures, calls, interviews, fleeting ideas ...)
+When your writing can keep up with the content, you tend to `miss less` of it.
+
+Using *GID* might not speed you up much in the start; in fact it might even make you slower.
+Since I just made up the symbols as I went and never had to learn them, the speed increase is one of the largest benefits for me personally.
+
+In addition to compressed writing, the tree structure also helps here.
+During particularly fast moving sections, it can be helpful to only briefly `touch on each point` and quickly move to the next one. Now the `structure` of the note will already be largely present, and the current implicit context can be made explicit by `filling in the gaps` once a pause presents itself.
+
+### Active Structuring
+
+When you are not in a hurry, you can take your time to `think carefully` about the structure and symbol utilization of your notes.
+Reasoning about what information can be `omitted`, and how it can best be `nested` can help you actively get a deeper `understanding` of the subject of your notes, while also making it easier to `decode` in the future.
+In essence, you want to prepare a simple explanation for your future self (or other readers).
+
+### Multithreading
+
+In case you are presented with multiple `interleaving subjects`, it is helpful to `quickly locate` each thread.
+This might happen if a previous point (e.g. in lecture/stream of consciousness/...) is brought up again at a later time.
+Once the appropriate point has been found by flowing down from more general parents with the help of indicating symbols, the new information can be `included easily`.
+
+### Transmission
+
+For ideas that require more `continued thought` and work than can be achieved in one session, it is useful to try and capture ones mental state at the point of interruption.
+The multitude of open tasks/thoughts/questions/... that accumulate during any sufficiently large project, can be offloaded in a `structured and iterative` manner (adding more detail as you go along).
+This way the `highly connected` nature of our thoughts can be captured with a little `less loss` via a lower dimensional tree.
+(As opposed to trying to capture the thoughts with even lower dimension of linear text).
+
+You might e.g. use this when leaving work for the weekend or simply before going to bed with the intention of continuing in the next session.
+
+Using *GID* deliberately (Active Structuring) can help you to `reconnect` with your thoughts in the future on re-reading your notes.
