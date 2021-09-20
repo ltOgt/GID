@@ -138,9 +138,9 @@ Your `implicit context` during writing might not be present later!
 ## Benefits
 
 I originally developed *GID* in the context of a part time job, university lectures and unstructured thinking sessions in the evening. So the following benefits result from my original requirements and experience with *GID* over the years.
-You mileage with some of these points may vary, but they all result from improved `storage` and `retreival` processes.
+You mileage with some of these points may vary, but they all result from improved `storage` and `retrieval` processes.
 
-### Writing Speed
+### Storage Speed
 
 Similar to [stenography (shorthand)](https://en.wikipedia.org/wiki/Shorthand), reducing the amount of characters that need to be written significantly improves your speed.
 This might come in handy when the subject of your notes is `moving quickly`.
@@ -152,6 +152,16 @@ Since I just made up the symbols as I went and never had to learn them, the spee
 
 In addition to compressed writing, the tree structure also helps here.
 During particularly fast moving sections, it can be helpful to only briefly `touch on each point` and quickly move to the next one. Now the `structure` of the note will already be largely present, and the current implicit context can be made explicit by `filling in the gaps` once a pause presents itself.
+
+### Retrieval Speed
+
+Both `compression via symbols` and deep `nesting` can help you quickly retrieve specific information.
+The `tree` structure of your notes will allow you to prune away large chunks of your notes during search.
+By scanning the top most level, you might identify a few relevant points that point to general topics in their branches, and `exclude multiple large sub-trees`.
+This can then be done recursively for each lower level.
+
+Additionally, scanning the `symbols` at the start of each line, you might be able to `dismiss entire sub-trees` without even having to read the content of the point.
+(E.g. a sub-tree that branches from an example for a point might not be relevant when you are looking for a definition to the parent of the example)
 
 ### Active Structuring
 
