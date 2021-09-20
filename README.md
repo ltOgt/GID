@@ -2,7 +2,7 @@
 
 *GID* defines a collection of `semantic symbols` that can be easily typed on most keyboards.
 These symbols can be used to `extract the goal/aim/kind` of an idea and thereby `reduce linguisitc overhead` needed for its expression.
-This is helpful for both `storing` and `retreiving` information quickly.
+This is helpful for both `storing` and `retrieving` information quickly.
 
 ## Components
 
