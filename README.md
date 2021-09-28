@@ -84,6 +84,7 @@ There also exists some overlap between some symbols, though their utilization mi
 `[!]`   TODO - Priority
 `[p]`   TODO - Postponed
 `[~]`   TODO - Partly Finished / On Hold
+`[-]`   TODO - Closed / Deprecated
 ```
 
 
@@ -185,3 +186,34 @@ This way the `highly connected` nature of our thoughts can be captured with a li
 You might e.g. use this when leaving work for the weekend or simply before going to bed with the intention of continuing in the next session.
 
 Using *GID* deliberately (Active Structuring) can help you to `reconnect` with your thoughts in the future on re-reading your notes.
+
+
+# Syntax Highlighting
+In case you use VSCode, here is a rough config that can be used with the [highlight](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight) package:
+
+Simply add the following to your `config.json`:
+
+```json
+"highlight.regexes": {
+        // GID Symbols
+        "(\\s(>|\\.|\\(|\\)|<|^|°|\\?|\\||:|:=|^=|~|/|§|¬|!=|i|!|!!|0|S|=|x|->|=>|<-|[0-9]+\\)|--|\\+|-|//|\\$|>>|::|\\|-|E|e|00|\\*|#|\\{|\\}|d|v|@|\\*\\*|_|\\[ \\]|\\[x\\]|\\[\\*\\]|\\[\\?\\]|\\[!\\]|\\[p\\]|\\[~\\])\\s)": { 
+            "regexFlags": "g", 
+            "filterFileRegex": ".*\\.gid",
+            "decorations": [ 
+                {
+                    "color": "#F6D55C"
+                }
+            ]
+        },
+        // GID Ref
+        "(~\\[[a-zA-Z_\\s]+\\]|\\*\\[[a-zA-Z_\\s]+\\]|~\\{[a-zA-Z_\\s]+\\}|\\*\\{[a-zA-Z_\\s]+\\}|\\[a-zA-Z0-9\\]~)": {
+            "regexFlags": "g",
+            "filterFileRegex": ".*\\.gid",
+            "decorations": [
+                {
+                    "color": "#FFFFFF"
+                }
+            ]
+        }
+}
+```
