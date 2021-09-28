@@ -17,74 +17,74 @@ The associated meaning of each symbol is decidedly `vague`, balancing `specifici
 There also exists some overlap between some symbols, though their utilization might vary depending on the context.
 
 ```
-`>`     Note
-`.`     Side-Note
-`(..)`  Relativation, side-note
+>	    Note
+.	    Side-Note
+(..)	Relativation, side-note
 
-`<`     Counter-Point, Alternative
-`^`     Claim
-`°`     Idea
+<	    Counter-Point, Alternative
+^	    Claim
+°	    Idea
 
-`?`     Question
-`:`     Explenation
-`:=`    Definition
-`^=`    Equal Meaning
-`~`     Maybe / Approximation / Like
-`/`     oposite, difference
-`§`     Example
-`¬`     not  (AltGr+6)
-`!=`    not
+?	    Question
+:	    Explanation
+:=	    Definition
+^=	    Equal Meaning
+~	    Maybe / Approximation / Like
+/	    opposite, difference
+§	    Example
+¬	    not  (AltGr+6)
+!=	    not
 
-`i`     Info (some importance)
-`!`     Important
-`!!`    Very Important
+i	    Info (some importance)
+!	    Important
+!!	    Very Important
 
-`0`     Goal/Aim/Focus
-`S`     Error / Problem
-`=`     Solution
-`x`     Condition
+0	    Goal/Aim/Focus
+S	    Error / Problem
+=	    Solution
+x	    Condition
 
-`->`    Follow
-`=>`    Conclusion
-`<-`    Reason
+->	    Follow
+=>	    Conclusion
+<-	    Reason
 
-`1)`    Enumeration
-`--`    Option / Type
-`+`     Pro
-`-`     Contra
+1)	    Enumeration
+--	    Option / Type
++	    Pro
+-	    Contra
 
-`//`    (internet) source
-`$`     Command-example
-`>>`    Code-example
-`::`    Code-output
-`|-`    (Sub-)Directory
+//	    (internet) source
+$	    Command-example
+>>	    Code-example
+::	    Code-output
+|-	    (Sub-)Directory
 
-`E`     parent
-`e`     is element of parent
-`00`    overview
+E	    parent
+e	    is element of parent
+00	    overview
 
-`*`     reference
-`#`     Innerff-Document Reference
-`{TAG}` Tag
-`[AB]~` Abbreviation
+*	    reference
+#	    Inner-Document Reference
+{TAG}	Tag
+[AB]~	Abbreviation
 
-`d`     Date
-`v`     Location
-`@`     Person
+d	    Date
+v	    Location
+@	    Person
 
-`**`    Comment
-`_`     Continued on next line
-`|`     Chain symbols
-`{..}`  Inline side branch / Comment
+**	    Comment
+_	    Continued on next line
+|	    Chain symbols
+{..}	Inline side branch / Comment
 
-`[ ]`   TODO
-`[x]`   TODO - Done
-`[*]`   TODO - Active
-`[?]`   TODO - Unsure
-`[!]`   TODO - Priority
-`[p]`   TODO - Postponed
-`[~]`   TODO - Partly Finished / On Hold
-`[-]`   TODO - Closed / Deprecated
+[ ]	    TODO
+[x]	    TODO - Done
+[*]	    TODO - Active
+[?]	    TODO - Unsure
+[!]	    TODO - Priority
+[p]	    TODO - Postponed
+[~]	    TODO - Partly Finished / On Hold
+[-]	    TODO - Closed / Deprecated
 ```
 
 
