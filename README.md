@@ -189,31 +189,5 @@ Using *GID* deliberately (Active Structuring) can help you to `reconnect` with y
 
 
 # Syntax Highlighting
-In case you use VSCode, here is a rough config that can be used with the [highlight](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight) package:
-
-Simply add the following to your `config.json`:
-
-```json
-"highlight.regexes": {
-        // GID Symbols
-        "(\\s(>|\\.|\\(|\\)|<|^|°|\\?|\\||:|:=|^=|~|/|§|¬|!=|i|!|!!|0|S|=|x|->|=>|<-|[0-9]+\\)|--|\\+|-|//|\\$|>>|::|\\|-|E|e|00|\\*|#|\\{|\\}|d|v|@|\\*\\*|_|\\[ \\]|\\[x\\]|\\[\\*\\]|\\[\\?\\]|\\[!\\]|\\[p\\]|\\[~\\])\\s)": { 
-            "regexFlags": "g", 
-            "filterFileRegex": ".*\\.gid",
-            "decorations": [ 
-                {
-                    "color": "#F6D55C"
-                }
-            ]
-        },
-        // GID Ref
-        "(~\\[[a-zA-Z_\\s]+\\]|\\*\\[[a-zA-Z_\\s]+\\]|~\\{[a-zA-Z_\\s]+\\}|\\*\\{[a-zA-Z_\\s]+\\}|\\[a-zA-Z0-9\\]~)": {
-            "regexFlags": "g",
-            "filterFileRegex": ".*\\.gid",
-            "decorations": [
-                {
-                    "color": "#FFFFFF"
-                }
-            ]
-        }
-}
-```
+In case you use VSCode, here is a rough text mate grammar that you can use:
+https://github.com/ltOgt/GID-vscode
